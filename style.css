@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+	background-color: #7eeac1;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+}
+
+.title h1{
+	font-size: 50px;
+	font-weight: 700;
+	color: #F7F7F7;
+}
+
+.title i{
+	color:blueviolet;
+}
+
+.results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.result {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 400px;
+	width: 300px;
+	border-radius: 10%;
+}
+
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 10%;
+	transition: all 0.3s ease;
+}
+
+.result img:hover{
+	transform: scale(1.02);
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.295);
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+button {
+	background-color: #7f16b7;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px;
+	width: 300px;
+	transition: all 0.3s ease;
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+button:focus {
+	outline: none
+}
+
+button:hover{
+	background-color: #7f16b7c4;
+	transform: scale(1.02);
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.295);
+}
+
+@media (max-width:760px){
+	.result{
+		margin: 10px;
+	height: 200px;
+	width: 150px;
+	}
+}
